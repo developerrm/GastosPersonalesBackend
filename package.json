@@ -1,0 +1,36 @@
+{
+  "name": "gastospersonalesbackend",
+  "version": "1.0.0",
+  "description": "Backend multitenant para Gastos Personales",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://localhost:26831/developerrm/GastosPersonalesBackend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.0",
+    "google-auth-library": "^11.1.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "zod": "^4.6.5",
+    "prisma": "^5.22.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
