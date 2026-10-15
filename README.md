@@ -17,7 +17,9 @@ Todos excepto `/health` y `/auth/google` requieren un JWT en el header `Authoriz
 | GET/POST | `/incomes` | Listar / crear ingreso mensual |
 | PUT | `/incomes/:monthKey` | Actualizar ingreso del mes |
 | GET/POST | `/categories` | Listar / crear categorías |
+| DELETE | `/categories/:id` | Eliminar categoría |
 | GET/POST | `/banks` | Listar / crear bancos |
+| DELETE | `/banks/:id` | Eliminar banco |
 
 Entradas validadas con Zod (400 con detalle), errores con formato `{ "error": "..." }`.
 

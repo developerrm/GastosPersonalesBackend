@@ -44,6 +44,10 @@ test('validación de entrada', async () => {
   assert.strictEqual(res.status, 400);
   res = await fetch(`${base}/expenses/not-a-uuid`, { method: 'DELETE', headers });
   assert.strictEqual(res.status, 400);
+  res = await fetch(`${base}/banks/not-a-uuid`, { method: 'DELETE', headers });
+  assert.strictEqual(res.status, 400);
+  res = await fetch(`${base}/categories/not-a-uuid`, { method: 'DELETE', headers });
+  assert.strictEqual(res.status, 400);
 });
 
 test('POST /auth/google rechaza token inválido', async () => {
